@@ -5,3 +5,55 @@
     box-sizing: border-box;
     font: 500 1rem 'Montserrat', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: var(--title-color-light);
+    font: 700 1rem 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+header {
+    background-color: gray;
+    height: 5rem;
+    width: 100%;
+    padding: 0 1.25rem;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a {
+    font: 700 1.5625rem 'Montserrat', sans-serif;
+}
+.menu {
+    list-style-type: none;
+    gap: 20px;
+}
+.menu li:last-child {
+    background-color: blue;
+    border-radius: 28px;
+    border: 1px solid darkblue;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    text-shadow: 0px 1px 0px darkblue;
+    cursor: pointer;
+}
+.menu li:last-child:hover {
+    background-color: darkblue;
+}
+
+.banner {
+    height: 100vh;
+    background-color: blue;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards {
+    height: 500px;
+}
