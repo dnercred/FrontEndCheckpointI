@@ -1,59 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font: 500 1rem 'Montserrat', sans-serif;
-}
-a {
-    text-decoration: none;
-    color: var(--title-color-light);
-    font: 700 1rem 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-}
 header {
-    background-color: gray;
-    height: 5rem;
-    width: 100%;
-    padding: 0 1.25rem;
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  background-color: gray;
+  padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.logo a {
-    font: 700 1.5625rem 'Montserrat', sans-serif;
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
 }
-.menu {
-    list-style-type: none;
-    gap: 20px;
+
+header .logo a {
+  font-weight: 700;
+  font-size: 1.5625rem;
 }
-.menu li:last-child {
-    background-color: blue;
-    border-radius: 28px;
-    border: 1px solid darkblue;
-    color: #ffffff;
-    padding: 0.8rem 1.5rem;
-    text-shadow: 0px 1px 0px darkblue;
-    cursor: pointer;
+
+header .menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
 }
-.menu li:last-child:hover {
-    background-color: darkblue;
+
+header .menu li:last-child {
+  background-color: blue;
+  border-radius: 28px;
+  border: 1px solid darkblue;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  text-shadow: 0px 1px 0px darkblue;
+  cursor: pointer;
+}
+
+header .menu li:last-child:last-child:hover {
+  background-color: darkblue;
 }
 
 .banner {
-    height: 100vh;
-    background-color: blue;
-    background-attachment: fixed;
-    flex-direction: column;
-    justify-content: center;
+  height: 100vh;
+  background-color: blue;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cards {
-    height: 500px;
+  height: 500px;
 }
+/*# sourceMappingURL=style.css.map */
