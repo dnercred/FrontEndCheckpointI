@@ -9,6 +9,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+body{
+    background-color: $bodyColor;
+}
 
 header {
     z-index: 1;
@@ -48,7 +51,6 @@ header {
            &:last-child:hover {
                background-color: $decorationColor;
            }
-    
         }
     }
 }
@@ -59,8 +61,58 @@ header {
     background-attachment: fixed;
     @include mixinFex( center, center );
     flex-direction: column;
+
 }
 
 .cards {
-    height: 500px;
+    @include mixinFex( center, center );
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 6%;
+    padding-right: 6%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    .card{
+        width: 25.5rem;
+        height: 32rem;
+        border-radius: 3%;
+        background-color: $textcolorLight;
+
+        .img {
+            width: 100%;
+            height: 50%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            background: url('#');
+            background-size: cover;
+        }
+        .card__conteudo {
+            padding: 20px;
+            @include mixinFex ( center, center );
+            flex-direction: column;
+            gap: 10px;
+            .btn{
+                @include mixinBtn;
+            }
+        }
+    }
+}
+
+footer{
+    height: 15rem;
+    background-color: $primaryColor;
+    @include mixinFex ( center, center );
+    flex-direction: column;
+    gap: 3rem;
+
+    .alunos{
+        width: 70rem;
+        @include mixinFex ( center, center );
+        justify-content: space-around;
+        .aluno{
+            @include mixinFex ( center, center );
+            flex-direction: column;
+        }
+    }
 }
