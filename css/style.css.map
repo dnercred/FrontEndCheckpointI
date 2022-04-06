@@ -6,7 +6,7 @@
         "Sass/_variables.scss",
         "Sass/_functions.scss",
         "Sass/_variables.scss",
-        "_header-footer.scss"
+        "Sass/_header-footer.scss"
     ],
     "names": [],
     "file": "style.css"
