@@ -1,32 +1,51 @@
+@import './variables';
+
 @mixin mixinFex ( $justify-content, $align-items ){
   display: flex;
   align-items: $align-items;
   justify-content: $justify-content;
 }
 
-@mixin mixinBtn {
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:#ffffff;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-  &:hover {
-    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-    background-color:#f6f6f6;
+@mixin mixinBtn ($padding) {
+	background-color: $secondaryColor;
+	border-radius: 5%;
+	border: 1px solid $decorationColor;
+	color: #ffffff;
+	padding: $padding;
+	text-shadow: 0px 1px 0px $decorationColor;
+	cursor: pointer;
 
-  }
-  &:active {
-    position:relative;
-    top:1px;
-    
-  }
+	&:hover {
+		background-color: $decorationColor;
+	}
+	&:active {
+	 background-color: $decorationColor;
+	 position:relative;
+	 top:1px;
+	}
+	
+}
+
+@mixin mixinTyping ( $nCharac, $steps, $time ){
+	width: $nCharac;
+	animation: typing $time steps($steps), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+
+}
+
+/* -- Animação de digitação -- */
+/* -- Font: https://codepen.io/denic/pen/GRoOxbM -- */
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }

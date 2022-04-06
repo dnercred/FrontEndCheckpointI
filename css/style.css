@@ -1,4 +1,30 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+/* -- Animação de digitação -- */
+/* -- Font: https://codepen.io/denic/pen/GRoOxbM -- */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +32,20 @@
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #202731;
+  color: #fff;
 }
 
-header {
+body header {
   z-index: 1;
   position: fixed;
   height: 5rem;
   width: 100%;
-  background-color: gray;
+  background-color: #171a21;
   padding: 0 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,19 +58,23 @@ header {
           justify-content: space-between;
 }
 
-header a {
+body header a {
   text-decoration: none;
-  color: black;
   font-weight: 700;
   font-size: 1rem;
+  color: #fff;
 }
 
-header .logo a {
+body header .logo a {
   font-weight: 700;
   font-size: 1.5625rem;
 }
 
-header .menu {
+body header .logo a span {
+  color: darkblue;
+}
+
+body header .menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,11 +86,12 @@ header .menu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
+  padding: 10px;
 }
 
-header .menu li:last-child {
-  background-color: blue;
-  border-radius: 28px;
+body header .menu li:last-child {
+  background-color: #181a1b;
+  border-radius: 5%;
   border: 1px solid darkblue;
   color: #ffffff;
   padding: 0.8rem 1.5rem;
@@ -66,13 +99,23 @@ header .menu li:last-child {
   cursor: pointer;
 }
 
-header .menu li:last-child:last-child:hover {
+body header .menu li:last-child:hover {
   background-color: darkblue;
 }
 
-.banner {
+body header .menu li:last-child:active {
+  background-color: darkblue;
+  position: relative;
+  top: 1px;
+}
+
+body .banner {
   height: 100vh;
-  background-color: blue;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 139, 0.678)), to(#202731)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif");
+  background: linear-gradient(to bottom, rgba(0, 0, 139, 0.678), #202731), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +132,29 @@ header .menu li:last-child:last-child:hover {
           flex-direction: column;
 }
 
-.cards {
+body .banner h1 {
+  width: 7ch;
+  -webkit-animation: typing 1s steps(7), blink 0.5s step-end infinite alternate;
+          animation: typing 1s steps(7), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+body .banner .btn {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  color: aqua;
+  border: 1px solid aqua;
+  padding: 0.5rem 2rem;
+  border-radius: 5%;
+}
+
+body #cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,8 +164,8 @@ header .menu li:last-child:last-child:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   padding-left: 6%;
   padding-right: 6%;
   -ms-flex-wrap: wrap;
@@ -108,23 +173,23 @@ header .menu li:last-child:last-child:hover {
   gap: 1rem;
 }
 
-.cards .card {
+body #cards .card {
   width: 25.5rem;
   height: 32rem;
   border-radius: 3%;
-  background-color: #fff;
+  background-color: #181a1b;
 }
 
-.cards .card .img {
+body #cards .card .img {
   width: 100%;
-  height: 50%;
+  height: 65%;
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
-  background: url("#");
+  background: url("https://cdn.akamai.steamstatic.com/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.600x338.jpg");
   background-size: cover;
 }
 
-.cards .card .card__conteudo {
+body #cards .card .card__conteudo {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,39 +207,34 @@ header .menu li:last-child:last-child:hover {
   gap: 10px;
 }
 
-.cards .card .card__conteudo .btn {
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
-          box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffffff), to(#f6f6f6));
-  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
-  color: #666666;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 24px;
+body #cards .card .card__conteudo .btn {
+  -ms-grid-column-align: end;
+      justify-self: end;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
+  font-weight: 700;
+  background-color: #181a1b;
+  border-radius: 5%;
+  border: 1px solid darkblue;
+  color: #ffffff;
+  padding: 0.8rem 5rem;
+  text-shadow: 0px 1px 0px darkblue;
+  cursor: pointer;
 }
 
-.cards .card .card__conteudo .btn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f6f6f6), to(#ffffff));
-  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-  background-color: #f6f6f6;
+body #cards .card .card__conteudo .btn:hover {
+  background-color: darkblue;
 }
 
-.cards .card .card__conteudo .btn:active {
+body #cards .card .card__conteudo .btn:active {
+  background-color: darkblue;
   position: relative;
   top: 1px;
 }
 
-footer {
+body footer {
   height: 15rem;
-  background-color: gray;
+  width: 100%;
+  background-color: #171a21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,22 +251,20 @@ footer {
   gap: 3rem;
 }
 
-footer .alunos {
-  width: 70rem;
+body footer .alunos {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer .alunos .aluno {
+body footer .alunos .aluno {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,5 +278,13 @@ footer .alunos .aluno {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  /* Tablet */
+}
+
+@media (max-width: 500px) {
+  /* Mobile */
 }
 /*# sourceMappingURL=style.css.map */
