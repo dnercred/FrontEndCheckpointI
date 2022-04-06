@@ -59,6 +59,10 @@ header .logo a span {
   color: darkblue;
 }
 
+header .side-menu {
+  display: none;
+}
+
 header .menu {
   list-style-type: none;
   display: -webkit-box;
@@ -145,6 +149,78 @@ footer .alunos .aluno {
 
 @media (max-width: 800px) {
   /* Tablet */
+  header {
+    /* Menu Icon */
+  }
+  header nav {
+    top: 5rem;
+    width: 95%;
+    height: 100%;
+    position: fixed;
+    background-color: #171a21;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height .2s ease-out;
+    transition: max-height .2s ease-out;
+  }
+  header nav .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .menu a {
+    display: block;
+    padding: 30px;
+    color: white;
+  }
+  header nav .menu a:hover {
+    background-color: gray;
+  }
+  header .hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+  }
+  header .hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  }
+  header .hamb-line::before, header .hamb-line::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  header .hamb-line::before {
+    top: 5px;
+  }
+  header .hamb-line::after {
+    top: -5px;
+  }
+  header .side-menu:checked ~ nav {
+    max-height: 50%;
+  }
+  header .side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+  header .side-menu:checked ~ .hamb .hamb-line::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+  }
+  header .side-menu:checked ~ .hamb .hamb-line::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
   footer h2 {
     font-size: 1rem;
   }

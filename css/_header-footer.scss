@@ -23,6 +23,9 @@ header {
     }
   }
   
+  .side-menu{
+    display: none;
+  }
   .menu {
       list-style-type: none;
       @include mixinFex( space-between, center );
@@ -58,11 +61,88 @@ footer{
 
 @media (max-width: 800px) {
   /* Tablet */
+  header{
 
-  footer{
-      h2{
-          font-size: 1rem;
+    nav{
+      top: 5rem;
+      width: 95%;
+      height: 100%;
+      position: fixed;
+      background-color: $primaryColor;
+      overflow: hidden;
+
+      max-height: 0;
+      transition: max-height .2s ease-out;
+
+      .menu{
+        flex-direction: column;
       }
+
+      .menu a{
+        display: block;
+        padding: 30px;
+        color: white;
+
+        &:hover{
+          background-color: gray;
+  
+        }
+      }
+    }
+    
+    /* Menu Icon */
+    .hamb{
+      cursor: pointer;
+      float: right;
+      padding: 40px 20px;
+      &-line {
+        background: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+        
+        &::before,
+        &::after{
+          background: white;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all .2s ease-out;
+          width: 100%;
+        }
+        &::before{
+          top: 5px;
+        }
+        &::after{
+          top: -5px;
+
+        }
+      }
+    }
+
+    .side-menu:checked ~ nav{
+      max-height: 50%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+      background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+      transform: rotate(-45deg);
+      top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+      transform: rotate(45deg);
+      top:0;
+    }
+    
+  }
+  
+  footer{
+    h2{
+      font-size: 1rem;
+    }
   }
   
 }
