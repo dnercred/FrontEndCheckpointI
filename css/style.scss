@@ -2,6 +2,7 @@
 @import './Sass/variables';
 @import './Sass/functions';
 @import './Sass/header-footer';
+@import './Sass/img';
 
 * {
     margin: 0;
@@ -61,16 +62,7 @@ body{
             height: 32rem;
             border-radius: 3%;
             background-color: $secondaryColor;
-    
-            .img {
-                width: 100%;
-                height: 65%;
-                border-top-left-radius: 3%;
-                border-top-right-radius: 3%;
-                background: url('https://cdn.akamai.steamstatic.com/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.600x338.jpg');
-                background-size: cover;
-            }
-    
+            
             .card__conteudo {
                 padding: 20px;
                 @include mixinFex ( center, center );

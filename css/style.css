@@ -237,6 +237,38 @@ footer .alunos .aluno {
   }
 }
 
+.card1 .img {
+  background-image: url("https://cdn.akamai.steamstatic.com/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.600x338.jpg");
+}
+
+.card2 .img {
+  background-image: url("#");
+}
+
+.card3 .img {
+  background-image: url("#");
+}
+
+.card4 .img {
+  background-image: url("#");
+}
+
+.card5 .img {
+  background-image: url("#");
+}
+
+.card6 .img {
+  background-image: url("#");
+}
+
+.card .img {
+  width: 100%;
+  height: 65%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -321,15 +353,6 @@ body #cards .card {
   height: 32rem;
   border-radius: 3%;
   background-color: #181a1b;
-}
-
-body #cards .card .img {
-  width: 100%;
-  height: 65%;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  background: url("https://cdn.akamai.steamstatic.com/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.600x338.jpg");
-  background-size: cover;
 }
 
 body #cards .card .card__conteudo {
