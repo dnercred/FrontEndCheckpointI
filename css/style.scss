@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import './Sass/variables';
 @import './Sass/functions';
+@import './header-footer';
 
 * {
     margin: 0;
@@ -13,42 +14,6 @@
 body{
     background-color: $bodyColor;
     color: $textcolorLight;
-
-    header {
-        z-index: 1;
-        position: fixed;
-        height: 5rem;
-        width: 100%;
-        background-color: $primaryColor;
-        padding: 0 1.25rem;
-        @include mixinFex( space-between, center );
-        
-        a {
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            color: $textcolorLight;
-        }
-    
-        .logo a {
-            font-weight: 700;
-            font-size: 1.5625rem;
-            span{
-                color: $decorationColor;
-            }
-        }
-        
-        .menu {
-            list-style-type: none;
-            @include mixinFex( space-between, center );
-            gap: 20px;
-            padding: 10px;
-    
-            li:last-child {
-                @include mixinBtn (0.8rem 1.5rem);
-            }
-        }
-    }
     
     .banner {
         height: 100vh;
@@ -120,35 +85,7 @@ body{
             }
         }
     }
-    
-    footer{
-        height: 15rem;
-        width: 100%;
-        background-color: $primaryColor;
-        @include mixinFex ( center, center );
-        flex-direction: column;
-        gap: 3rem;
-    
-        .alunos{
-            width: 80%;
-            @include mixinFex ( space-between, center );
-            .aluno{
-                @include mixinFex ( center, center );
-                flex-direction: column;
-            }
-        }
-    }
-}
-
-
-@media (max-width: 800px) {
-    /* Tablet */
-
 
 }
 
-@media (max-width: 500px) {
-    /* Mobile */
 
-
-}

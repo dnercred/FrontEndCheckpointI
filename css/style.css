@@ -25,22 +25,7 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #202731;
-  color: #fff;
-}
-
-body header {
+header {
   z-index: 1;
   position: fixed;
   height: 5rem;
@@ -58,23 +43,23 @@ body header {
           justify-content: space-between;
 }
 
-body header a {
+header a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
   color: #fff;
 }
 
-body header .logo a {
+header .logo a {
   font-weight: 700;
   font-size: 1.5625rem;
 }
 
-body header .logo a span {
+header .logo a span {
   color: darkblue;
 }
 
-body header .menu {
+header .menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +74,7 @@ body header .menu {
   padding: 10px;
 }
 
-body header .menu li:last-child {
+header .menu li:last-child {
   background-color: #181a1b;
   border-radius: 5%;
   border: 1px solid darkblue;
@@ -99,14 +84,96 @@ body header .menu li:last-child {
   cursor: pointer;
 }
 
-body header .menu li:last-child:hover {
+header .menu li:last-child:hover {
   background-color: darkblue;
 }
 
-body header .menu li:last-child:active {
+header .menu li:last-child:active {
   background-color: darkblue;
   position: relative;
   top: 1px;
+}
+
+footer {
+  height: 15rem;
+  width: 100%;
+  background-color: #171a21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+footer .alunos {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .alunos .aluno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  /* Tablet */
+  footer h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Mobile */
+  .alunos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #202731;
+  color: #fff;
 }
 
 body .banner {
@@ -229,62 +296,5 @@ body #cards .card .card__conteudo .btn:active {
   background-color: darkblue;
   position: relative;
   top: 1px;
-}
-
-body footer {
-  height: 15rem;
-  width: 100%;
-  background-color: #171a21;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3rem;
-}
-
-body footer .alunos {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body footer .alunos .aluno {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (max-width: 800px) {
-  /* Tablet */
-}
-
-@media (max-width: 500px) {
-  /* Mobile */
 }
 /*# sourceMappingURL=style.css.map */

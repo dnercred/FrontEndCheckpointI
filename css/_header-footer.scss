@@ -1,0 +1,78 @@
+header {
+  z-index: 1;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  background-color: $primaryColor;
+  padding: 0 1.25rem;
+  @include mixinFex( space-between, center );
+  
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $textcolorLight;
+  
+  }
+
+  .logo a {
+    font-weight: 700;
+    font-size: 1.5625rem;
+    span{
+      color: $decorationColor;
+    }
+  }
+  
+  .menu {
+      list-style-type: none;
+      @include mixinFex( space-between, center );
+      gap: 20px;
+      padding: 10px;
+
+      li:last-child {
+          @include mixinBtn (0.8rem 1.5rem);
+      }
+  }
+}
+
+
+
+
+footer{
+  height: 15rem;
+  width: 100%;
+  background-color: $primaryColor;
+  @include mixinFex ( center, center );
+  flex-direction: column;
+  gap: 3rem;
+
+  .alunos{
+      width: 80%;
+      @include mixinFex ( space-between, center );
+      .aluno{
+          @include mixinFex ( center, center );
+          flex-direction: column;
+      }
+  }
+}
+
+@media (max-width: 800px) {
+  /* Tablet */
+
+  footer{
+      h2{
+          font-size: 1rem;
+      }
+  }
+  
+}
+
+@media (max-width: 500px) {
+  /* Mobile */
+  
+  .alunos{
+      flex-direction: column;
+      gap: 20px;
+  }
+
+}
