@@ -62,10 +62,14 @@ footer{
           @include mixinFex ( center, center );
           flex-direction: column;
           .linkedin{
+            height: 16px;
+            width: 16px;
             background-image: url('../../img/linkedinLogo.png');
 
           }
           .github{
+            height: 16px;
+            width: 16px;
             background-image: url('../../img/githubLogo.png');
 
           }
