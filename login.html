@@ -21,16 +21,22 @@
             <!-- Menu -->
             <nav>
                 <ul class="menu">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#cards">Games</a></li>
-                    <li><a href="#footer">Sober nós</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#cards">Games</a></li>
+                    <li><a href="index.html#footer">Sober nós</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <!-- login -->
+            <form action="/action_page.php">
+                <label for="fname">E-mail:</label><br />
+                <input type="text" id="fname" name="fname" /><br />
+                <label for="lname">senha:</label><br />
+                <input type="text" id="lname" name="lname" /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
         </main>
 
         <footer id="footer">
