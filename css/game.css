@@ -255,61 +255,41 @@ footer .alunos .aluno .github {
   }
 }
 
-.card1 .img {
-  background-image: url("https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/08/games-famosos-10-jogos-novos-e-antigos-que-seguram-a-fama-1.jpg.webp");
-}
-
-.card2 .img {
-  background-image: url("https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/08/games-famosos-10-jogos-novos-e-antigos-que-seguram-a-fama-1.jpeg.webp");
-}
-
-.card3 .img {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets1.ignimgs.com%2F2019%2F05%2F30%2Fcall-of-duty-modern-warfare---button-01-1559237615728.jpg&f=1&nofb=1");
-}
-
-.card4 .img {
-  background-image: url("https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/08/games-famosos-10-jogos-novos-e-antigos-que-seguram-a-fama-3.jpg.webp");
-}
-
-.card5 .img {
-  background-image: url("https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/08/games-famosos-10-jogos-novos-e-antigos-que-seguram-a-fama-4.jpg.webp");
-}
-
-.card6 .img {
-  background-image: url("https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2020/08/games-famosos-10-jogos-novos-e-antigos-que-seguram-a-fama-5.jpg.webp");
-}
-
-.card .img {
-  width: 100%;
-  height: 65%;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  background-size: cover;
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #202731;
-  color: #fff;
+body .banner {
+  height: 35rem;
+  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.pushsquare.com%2F99b1fc08bc4a4%2Fcall-of-duty-modern-warfare-2019-ps4.original.jpg&f=1&nofb=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-body .banner {
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 139, 0.678)), to(#202731)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif");
-  background: linear-gradient(to bottom, rgba(0, 0, 139, 0.678), #202731), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body .principal {
+  width: 100%;
+  margin-bottom: 15rem;
+  margin-top: -10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .principal .cover {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,93 +305,60 @@ body .banner {
           flex-direction: column;
 }
 
-body .banner h1 {
-  width: 7ch;
-  -webkit-animation: typing 1s steps(7), blink 0.5s step-end infinite alternate;
-          animation: typing 1s steps(7), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-weight: 700;
-  font-size: 5rem;
+body .principal .cover .img {
+  height: 27rem;
+  width: 20rem;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.miraheze.org%2Fawesomegameswiki%2F4%2F47%2F602324-call-of-duty-modern-warfare-xbox-one-front-cover.jpg&f=1&nofb=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-body .banner .btn {
-  margin-top: 2rem;
-  text-decoration: none;
+body .principal .conteudo {
+  width: 60%;
+  height: 27rem;
+  padding-right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+
+body .principal .conteudo h1 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+body .principal .conteudo h2 {
+  color: darkblue;
   font-weight: 700;
   font-size: 2rem;
-  color: aqua;
-  border: 1px solid aqua;
-  padding: 0.5rem 2rem;
-  border-radius: 5%;
+  margin-bottom: 70px;
 }
 
-body #cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  padding-left: 6%;
-  padding-right: 6%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1rem;
+@media (max-width: 800px) {
+  .principal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .principal .conteudo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
-
-body #cards .card {
-  width: 25.5rem;
-  height: 32rem;
-  border-radius: 3%;
-  background-color: #181a1b;
-}
-
-body #cards .card .card__conteudo {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-body #cards .card .card__conteudo .btn {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  text-decoration: none;
-  font-weight: 700;
-  background-color: #181a1b;
-  border-radius: 5%;
-  border: 1px solid darkblue;
-  color: #ffffff;
-  padding: 0.8rem 5rem;
-  text-shadow: 0px 1px 0px darkblue;
-  cursor: pointer;
-}
-
-body #cards .card .card__conteudo .btn:hover {
-  background-color: darkblue;
-}
-
-body #cards .card .card__conteudo .btn:active {
-  background-color: darkblue;
-  position: relative;
-  top: 1px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=game.css.map */

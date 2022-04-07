@@ -56,6 +56,7 @@ header .logo a {
 }
 
 header .logo a span {
+  font-weight: 500;
   color: darkblue;
 }
 
@@ -78,6 +79,10 @@ header .menu {
   padding: 10px;
 }
 
+header .menu a:hover {
+  color: aqua;
+}
+
 header .menu li:last-child {
   background-color: #181a1b;
   border-radius: 5%;
@@ -98,10 +103,15 @@ header .menu li:last-child:active {
   top: 1px;
 }
 
+header .menu li:last-child a:hover {
+  color: #fff;
+}
+
 footer {
   height: 15rem;
   width: 100%;
   background-color: #171a21;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,6 +155,14 @@ footer .alunos .aluno {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+footer .alunos .aluno .linkedin {
+  background-image: url("../../img/linkedinLogo.png");
+}
+
+footer .alunos .aluno .github {
+  background-image: url("../../img/githubLogo.png");
 }
 
 @media (max-width: 800px) {
@@ -248,7 +266,9 @@ footer .alunos .aluno {
 }
 
 body {
-  background-color: #202731;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 139, 0.678)), to(#202731)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif") no-repeat top;
+  background: linear-gradient(to bottom, rgba(0, 0, 139, 0.678), #202731), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif") no-repeat top;
+  background-size: cover;
   color: #fff;
 }
 
@@ -284,5 +304,30 @@ body main form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+body main form .btn {
+  background-color: #181a1b;
+  border-radius: 5%;
+  border: 1px solid darkblue;
+  color: #ffffff;
+  padding: 0.8rem 4.7rem;
+  text-shadow: 0px 1px 0px darkblue;
+  cursor: pointer;
+}
+
+body main form .btn:hover {
+  background-color: darkblue;
+}
+
+body main form .btn:active {
+  background-color: darkblue;
+  position: relative;
+  top: 1px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
 /*# sourceMappingURL=login.css.map */

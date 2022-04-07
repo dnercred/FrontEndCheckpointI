@@ -3,15 +3,6 @@
 @import './Sass/functions';
 @import './Sass/header-footer';
 
-$primaryColor: #171a21;
-$secondaryColor: #181a1b;
-$decorationColor: darkblue;
-$secondaryColorLight: aqua;
-
-$bodyColor: #202731;
-$textColor: black;
-$textcolorLight: #fff;
-
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +12,14 @@ $textcolorLight: #fff;
   scroll-behavior: smooth;
 }
 body{
-  background-color: $bodyColor;
-  color: $textcolorLight;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 139, 0.678),
+    $bodyColor
+    ),
+    url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif') no-repeat top;
+    background-size: cover;
+    color: $textcolorLight;
   main{
     height: 80vh;
     width: 100%;
@@ -36,6 +33,15 @@ body{
       @include mixinFex( center, center );
       flex-direction: column;
 
+      .btn{
+        @include mixinBtn (0.8rem 4.7rem);
+
+      }
     }
   }
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
 }

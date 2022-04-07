@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import './Sass/variables';
+@import './Sass/functions';
+@import './Sass/header-footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+body{
+  .banner{
+    height: 35rem;
+    background: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.pushsquare.com%2F99b1fc08bc4a4%2Fcall-of-duty-modern-warfare-2019-ps4.original.jpg&f=1&nofb=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .principal{
+    width: 100%;
+    margin-bottom: 15rem;
+    margin-top: -10rem;
+    @include mixinFex( center, center );
+
+    .cover{
+      width: 40%;
+      @include mixinFex( center, center );
+      flex-direction: column;
+
+      .img{
+        height: 27rem;
+        width: 20rem;
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.miraheze.org%2Fawesomegameswiki%2F4%2F47%2F602324-call-of-duty-modern-warfare-xbox-one-front-cover.jpg&f=1&nofb=1');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .conteudo{
+      width: 60%;
+      height: 27rem;
+      padding-right: 150px;
+      @include mixinFex( flex-start, flex-start );
+      flex-direction: column;
+      gap: 2px;
+
+      h1{
+        color: $textcolorLight;
+        margin-top: 20px;
+        font-size: 3rem;
+        font-weight: 700;
+
+      }
+      h2{
+        color: $decorationColor;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .principal{
+    flex-direction: column;
+    .conteudo{
+      align-items: center;
+    }
+  }
+
+}
