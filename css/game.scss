@@ -10,23 +10,34 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   scroll-behavior: smooth;
+  color: $textcolorLight;
+
 }
+
+header{
+  z-index: 2;
+}
+
 body{
+  background-color: $bodyColor;
   .banner{
     height: 35rem;
     background: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.pushsquare.com%2F99b1fc08bc4a4%2Fcall-of-duty-modern-warfare-2019-ps4.original.jpg&f=1&nofb=1');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   }
   .principal{
     width: 100%;
-    margin-bottom: 15rem;
-    margin-top: -10rem;
+    margin-bottom: 10rem;
+    margin-top: -11rem;
+    padding: 0 10%;
     @include mixinFex( center, center );
-
+    gap: 12%;
+    
     .cover{
-      width: 40%;
+      z-index: 1;
       @include mixinFex( center, center );
       flex-direction: column;
 
@@ -40,15 +51,14 @@ body{
       }
     }
     .conteudo{
-      width: 60%;
+      z-index: 1;
       height: 27rem;
-      padding-right: 150px;
       @include mixinFex( flex-start, flex-start );
       flex-direction: column;
       gap: 2px;
+      padding-right: 5%;
 
       h1{
-        color: $textcolorLight;
         margin-top: 20px;
         font-size: 3rem;
         font-weight: 700;
@@ -67,9 +77,16 @@ body{
 @media (max-width: 800px) {
   .principal{
     flex-direction: column;
+
     .conteudo{
-      align-items: center;
+      padding: 0;
+
+      h1,h2{
+        align-self: center;
+      }
+      h1{
+        font-size: 2.5rem;
+      }
     }
   }
-
 }

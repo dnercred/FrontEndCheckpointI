@@ -157,16 +157,10 @@ footer .alunos .aluno {
           flex-direction: column;
 }
 
-footer .alunos .aluno .linkedin {
-  height: 16px;
-  width: 16px;
-  background-image: url("../../img/linkedinLogo.png");
-}
-
-footer .alunos .aluno .github {
-  height: 16px;
-  width: 16px;
-  background-image: url("../../img/githubLogo.png");
+footer .alunos .aluno .social svg {
+  margin: 10px;
+  height: 2rem;
+  fill: #fff;
 }
 
 @media (max-width: 800px) {

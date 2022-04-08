@@ -157,16 +157,10 @@ footer .alunos .aluno {
           flex-direction: column;
 }
 
-footer .alunos .aluno .linkedin {
-  height: 16px;
-  width: 16px;
-  background-image: url("../../img/linkedinLogo.png");
-}
-
-footer .alunos .aluno .github {
-  height: 16px;
-  width: 16px;
-  background-image: url("../../img/githubLogo.png");
+footer .alunos .aluno .social svg {
+  margin: 10px;
+  height: 2rem;
+  fill: #fff;
 }
 
 @media (max-width: 800px) {
@@ -267,6 +261,15 @@ footer .alunos .aluno .github {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   scroll-behavior: smooth;
+  color: #fff;
+}
+
+header {
+  z-index: 2;
+}
+
+body {
+  background-color: #202731;
 }
 
 body .banner {
@@ -275,12 +278,15 @@ body .banner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
 body .principal {
   width: 100%;
-  margin-bottom: 15rem;
-  margin-top: -10rem;
+  margin-bottom: 10rem;
+  margin-top: -11rem;
+  padding: 0 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,10 +296,11 @@ body .principal {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 12%;
 }
 
 body .principal .cover {
-  width: 40%;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,9 +326,8 @@ body .principal .cover .img {
 }
 
 body .principal .conteudo {
-  width: 60%;
+  z-index: 1;
   height: 27rem;
-  padding-right: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,10 +342,10 @@ body .principal .conteudo {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2px;
+  padding-right: 5%;
 }
 
 body .principal .conteudo h1 {
-  color: #fff;
   margin-top: 20px;
   font-size: 3rem;
   font-weight: 700;
@@ -360,9 +366,15 @@ body .principal .conteudo h2 {
             flex-direction: column;
   }
   .principal .conteudo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 0;
+  }
+  .principal .conteudo h1, .principal .conteudo h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .principal .conteudo h1 {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=game.css.map */
