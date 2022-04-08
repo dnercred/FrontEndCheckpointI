@@ -1,3 +1,5 @@
+# [github-pages ](https://guimoreirac.github.io/checkpoint-02_front_I/)
+
 # Checkpoint 02 - Front end I
 
 ## Objetivo
@@ -53,12 +55,7 @@ Esse projeto, apesar de ter um tema que será definido pelo grupo (até 3 integr
 
 8. O trabalho poderá seguir o seguinte [wireframe](https://www.figma.com/file/hSgsjjoM7Mc88WVtQ5i9QV/Checkpoint-3).
 
-9. O trabalho deverá ser entregue por um repositório no github, ou gitpages, ou replit. O link deve ser disponibilizado diretamente no formulário:
-   https://forms.gle/JMTNHvw1nrXiqVMn8.
 
-    10.PRAZO DE ENTREGA:
-    a. Turmas que começaram dia 07/02 - Data de entrega 06/04 às 23:59h.
-    b. Turmas que começaram dia 21/02 - Data de entrega 20/04 às 23:59h.
 
 ## Conclusão
 
