@@ -17,22 +17,24 @@ body{
     color: $textcolorLight;
     
     .banner {
-        height: 100vh;
+        height: 50vh;
         background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 139, 0.678),
-            $bodyColor
-        ),
-        url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FA3XGd7RZkNFqU%2Fgiphy.gif');
+            to bottom),
+            rgba(0, 0, 139, 0.678);
+           
+            background-color: red;
+        
+        url('https://t3.ftcdn.net/jpg/04/94/56/98/240_F_494569846_wCkgLyihjXD9nWn6ZEFLY1sbTgdzYlty.jpg');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        
         @include mixinFex( center, center );
         flex-direction: column;
         h1{
             @include mixinTyping ( 7ch, 7, 1s );
-            font-weight: 700;
+            font-weight: 100;
             font-size: 5rem;
         }
         .btn{
@@ -46,7 +48,7 @@ body{
             border-radius: 5%;
 
         }
-    }
+    
     
     #cards {
         @include mixinFex( center, center );
@@ -78,6 +80,5 @@ body{
         }
     }
 
-}
 
 

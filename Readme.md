@@ -1,65 +1,42 @@
-# Checkpoint 02 - Front end I
+# Checkpoint 01 - Front end I
 
-## Objetivo
+Recuperação - Front End I
+Objetivo
+Estamos aqui para te acompanhar na última etapa da sua jornada de Front I.
+Nessa avaliação de recuperação você vai usar todo seu conhecimento adquirido até aqui. Não apenas o conhecimento técnico, mas também, organização, foco e persistência.
 
-Ficamos muito felizes com sua jornada até aqui, pois foram muitos desafios e conteúdos que você precisou aprender para chegar até este momento.
+Instruções
+Nesse projeto, você deverá criar uma landing page de uma loja que terá o tema da sua escolha. Note que o tema da loja deve ser diferente do seu Checkpoint 2. Ele deverá cumprir algumas exigências:
 
-Essa etapa do curso é onde você vai usar todo seu conhecimento adquirido até aqui. Não apenas o conhecimento técnico, mas também o trabalho em equipe, organização, foco e persistência.
+REQUISITOS GERAIS:
+Todo o site deve estar responsivo.
+Opcionalmente, o site deve ser feito com Bootstrap ou com outro framework da sua escolha.
+O site deve ter hover e transições.
+O site deve ter rolagem suave (scroll behavior - smooth).
 
-## Instruções
 
-Esse projeto, apesar de ter um tema que será definido pelo grupo (até 3 integrantes), deverá cumprir algumas exigências:
+HEADER:
+Header deve linkar 4 seções do seu site além da logo (Início, Sobre, Produtos e Contatos (Footer)). Cada item deve linkar com uma parte da sua página.
+O header deverá sempre estar no topo da página. 
 
-1. REQUISITOS GERAIS:
+BANNER:
+O banner tem de ter um botão e uma breve descrição do site.
+O banner vai ocupar toda área da viewport (VH) do usuário. 
 
-    a. Todo o site deve estar responsivo.
-    b. Opcionalmente, o site deve ser feito com Bootstrap.
-    c. O site deve ter hover e transições.
-    d. O site deve ter rolagem suave (scroll behavior - smooth).
-    e. O title deve variar de acordo com a página atual. Ex: Em um cenário hipotético de filmes, na página do filme peter pan ficaria: DH Flix | Peter Pan.
-    f. Todas as páginas devem ter o mesmo header e footer.
 
-2. HEADER:
+LISTAGEM DE ITENS:
+A home terá uma listagem de itens (cards). 
+O link do header para os itens, devem levar para essa seção da página.
+Mínimo de itens para listagem é 3.
+Os itens devem ter: título, foto e um botão de compra. Note que esse botão não vai linkar nada.
+Ao passar com o mouse na imagem, a mesma deve ter um filtro, se quiser fazer alguma animação, também pode.
 
-    a. Header deve conter 4 itens além da logo (Home, itens, login e sobre nós). Cada item deve linkar com uma parte do site ou uma página externa.
-    b. O header deverá sempre estar no topo da página.
+FOOTER
+No footer deve haver informações sobre o desenvolvedor e sobre o contato. Bem como ano de desenvolvimento do trabalho. 
 
-3. BANNER:
+O trabalho poderá seguir o seguinte wireframe (Desktop 1 e Iphone 1).
 
-    a. A home deverá ter um banner e este deve ter o efeito parallax, (pesquise por background-attachment).
-    b. O banner tem de ter um botão e uma breve descrição do site.
-    c. O banner vai ocupar toda área da viewport (VH) do usuário.
-
-4. LISTAGEM DE ITENS:
-
-    a. A home terá uma listagem de itens.
-    b. O link do header para os itens, devem levar para essa seção da página.
-    c. A listagem dos itens tem de ter um scale no hover, mas se quiser fazer outra animação, também pode.
-    d. Mínimo de itens para listagem é 6.
-    e. Os itens devem ter: título, foto, descrição e um botão que leva para a página de detalhe deste item.
-
-5. FOOTER
-
-    a. No footer deve haver informações sobre a equipe e sobre contato.
-    Bem como ano de desenvolvimento do trabalho.
-
-6. PÁGINA DE DETALHE:
-
-    a. Seu site tem de ter uma página de detalhes para cada item listado onde haverá uma explicação sobre o mesmo. No exemplo dos filmes, a página de um filme teria sua sinopse, link para o trailer e ficha técnica.
-
-7. PÁGINA OU MODAL DE LOGIN:
-
-    a. Formulário de login deverá ter uma logo, um campo de user e um campo de senha e um botão de submit.
-
-8. O trabalho poderá seguir o seguinte [wireframe](https://www.figma.com/file/hSgsjjoM7Mc88WVtQ5i9QV/Checkpoint-3).
-
-9. O trabalho deverá ser entregue por um repositório no github, ou gitpages, ou replit. O link deve ser disponibilizado diretamente no formulário:
-   https://forms.gle/JMTNHvw1nrXiqVMn8.
-
-    10.PRAZO DE ENTREGA:
-    a. Turmas que começaram dia 07/02 - Data de entrega 06/04 às 23:59h.
-    b. Turmas que começaram dia 21/02 - Data de entrega 20/04 às 23:59h.
-
-## Conclusão
-
-Parabéns! Você acaba de finalizar o último checkpoint de Front End I!
+O trabalho deverá ser entregue por um repositório no github e gitpages, ou replit. O link deve ser disponibilizado diretamente no formulário:
+https://forms.gle/G2Fb16JosnynR5u79
+# FrontEndCheckpointI
+# FrontEndCheckpointI
