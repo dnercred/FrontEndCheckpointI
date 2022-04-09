@@ -19,6 +19,7 @@ header {
     font-weight: 700;
     font-size: 1.5625rem;
     span{
+      font-weight: 500;
       color: $decorationColor;
     }
   }
@@ -32,22 +33,27 @@ header {
       gap: 20px;
       padding: 10px;
 
+      a:hover{
+        color: $secondaryColorLight;
+      }
+
       li:last-child {
-          @include mixinBtn (0.8rem 1.5rem);
+        @include mixinBtn (0.8rem 1.5rem);
+        a:hover{
+          color: $textcolorLight;
+        }
       }
   }
 }
-
-
-
 
 footer{
   height: 15rem;
   width: 100%;
   background-color: $primaryColor;
+  color: $textcolorLight;
   @include mixinFex ( center, center );
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 
   .alunos{
       width: 80%;
@@ -55,6 +61,14 @@ footer{
       .aluno{
           @include mixinFex ( center, center );
           flex-direction: column;
+          .social{
+            svg{
+              margin: 10px;
+              height: 2rem;
+              fill: $textcolorLight;
+            }
+          }
+
       }
   }
 }
